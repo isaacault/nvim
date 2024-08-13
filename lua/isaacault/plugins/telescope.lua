@@ -21,6 +21,11 @@ return {
 				"<cmd>Telescope live_grep<cr>", 
 				desc = "Live grep in project"
 			},
+            {
+                '<leader>vh',
+                "<cmd>Telescope help_tags<cr>",
+                desc = "Vim help tags"
+            },
 		},
         opts = {},
 	},
