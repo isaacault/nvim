@@ -16,3 +16,7 @@ vim.opt.colorcolumn = "80"
 
 -- Show result as we type.
 vim.opt.incsearch = true
+
+-- Smart case-sensitive search.
+vim.opt.ignorecase = true
+vim.opt.smartcase = true
