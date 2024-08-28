@@ -46,7 +46,10 @@ return {
                 end,
             },
         })
+
+        -- Don't ensure_installed clangd with to allow for local clangd
         require("lspconfig")['clangd'].setup {}
+
         -- Set up nvim-cmp.
         local cmp = require('cmp')
         local cmp_select = { behavior = cmp.SelectBehavior.Select }
