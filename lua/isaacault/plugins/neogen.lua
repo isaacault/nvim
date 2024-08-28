@@ -1,9 +1,8 @@
 return {
-    { 
-        "danymat/neogen", 
-        config = true,
+    {
+        "danymat/neogen",
         -- Uncomment next line if you want to follow only stable versions
-        -- version = "*" 
+        -- version = "*"
         dependencies = {
             "nvim-treesitter/nvim-treesitter",
             "L3MON4D3/LuaSnip",
