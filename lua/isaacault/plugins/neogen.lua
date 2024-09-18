@@ -7,10 +7,16 @@ return {
             "nvim-treesitter/nvim-treesitter",
             "L3MON4D3/LuaSnip",
         },
-        config = function()
-            require('neogen').setup({ snippet_engine = "luasnip" })
-            local opts = { noremap = true, silent = true }
-            vim.api.nvim_set_keymap("n", "<Leader>s", ":lua require('neogen').generate()<CR>", opts)
-        end,
+        opts = {
+            snippet_engine = "luasnip",
+        },
+        keys = {
+            {
+                "<leader>s",
+                "<cmd>Neogen<cr>",
+                desc = "Generate snippet",
+                silent = true,
+            },
+        },
     }
 }
