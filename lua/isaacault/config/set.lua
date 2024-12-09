@@ -2,10 +2,10 @@
 vim.opt.number = true
 vim.opt.relativenumber = true
 
--- Tabs are 4 spaces.
-vim.opt.tabstop = 4
-vim.opt.softtabstop = 4
-vim.opt.shiftwidth = 4
+-- Tabs are 2 spaces.
+vim.opt.tabstop = 2
+vim.opt.softtabstop = 2
+vim.opt.shiftwidth = 2
 vim.opt.expandtab = true
 
 -- Auto indent new lines.
