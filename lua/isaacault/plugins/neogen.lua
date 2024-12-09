@@ -12,10 +12,12 @@ return {
         },
         keys = {
             {
-                "<leader>s",
-                "<cmd>Neogen<cr>",
-                desc = "Generate snippet",
-                silent = true,
+                "<Leader>s",
+                function()
+                    require('neogen').generate()
+                end,
+                { noremap = true, silent = true },
+                desc = "Generate snippet"
             },
         },
     }
