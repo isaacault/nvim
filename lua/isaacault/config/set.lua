@@ -20,3 +20,6 @@ vim.opt.incsearch = true
 -- Smart case-sensitive search.
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
+
+-- Scroll offset.
+vim.opt.scrolloff = 10
