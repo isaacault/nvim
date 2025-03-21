@@ -19,10 +19,17 @@ return {
         sync_install = false,
         highlight = { enable = true },
         indent = { enable = true },
+        incremental_selection = {
+          enable = true,
+          keymaps = {
+            -- Use <Enter> to begin and increment selection of the tree.
+            init_selection = "<Enter>",
+            node_incremental = "<Enter>",
+            scope_incremental = false,
+            node_decremental = "<Backspace>",
+          },
+        },
       })
     end
-  },
-  {
-    "nvim-treesitter/nvim-treesitter-context",
   },
 }

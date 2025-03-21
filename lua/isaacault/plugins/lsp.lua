@@ -24,6 +24,7 @@ return {
       ensure_installed = {
         "lua_ls",
         "rust_analyzer",
+        "clangd",
       },
       handlers = {
         function(server_name)
@@ -47,13 +48,13 @@ return {
       },
     })
 
-    -- Don't ensure_installed clangd with to allow for local clangd
-    require("lspconfig")['clangd'].setup {
-      cmd = {
-        "clangd",
-        "--header-insertion=never",
-      },
-    }
+    -- -- Don't ensure_installed clangd with to allow for local clangd
+    -- require("lspconfig")['clangd'].setup {
+    --   cmd = {
+    --     "clangd",
+    --     "--header-insertion=never",
+    --   },
+    -- }
 
     -- Set up nvim-cmp.
     local cmp = require('cmp')
