@@ -16,9 +16,20 @@ return {
 		{
 			"<leader>fg",
 			function()
+				require("fzf-lua").live_grep({
+					-- Remove "oil:://" from directory for when we're searching from
+					-- within oil.
+					cwd = vim.fn.fnamemodify(vim.fn.expand("%:h"), ":s?oil://??"),
+				})
+			end,
+			desc = "[F]ind [G]rep (current directory)",
+		},
+		{
+			"<leader>fG",
+			function()
 				require("fzf-lua").live_grep()
 			end,
-			desc = "[F]ind [G]rep",
+			desc = "[F]ind [G]rep (entire project)",
 		},
 		{
 			"<leader>fb",
