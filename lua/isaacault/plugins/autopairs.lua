@@ -1,3 +1,4 @@
+-- Automatically provide character pairs i.e. "", {}, (), etc.
 return {
 	{
 		"windwp/nvim-autopairs",

@@ -1,3 +1,4 @@
+-- Show git commit details.
 return {
 	{
 		"f-person/git-blame.nvim",

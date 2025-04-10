@@ -1,3 +1,4 @@
+-- Fzf integration.
 return {
 	"ibhagwan/fzf-lua",
 	-- optional for icon support

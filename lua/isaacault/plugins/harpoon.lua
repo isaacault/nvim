@@ -1,3 +1,4 @@
+-- Tag files and quickly switch between them.
 return {
 	{
 		"ThePrimeagen/harpoon",

@@ -1,3 +1,4 @@
+-- Parse files and generate syntax tree.
 return {
 	{
 		"nvim-treesitter/nvim-treesitter",

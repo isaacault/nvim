@@ -1,3 +1,4 @@
+-- Code diagnostics summary and navigation.
 return {
 	{
 		"folke/trouble.nvim",
